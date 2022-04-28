@@ -44,6 +44,7 @@ public class BaseTest {
 	public static ExtentReports extent;
 	
 	public void startSession() throws IOException {
+		//dummy coomit
 		extent = ExtentManager.getInstance();
 		System.out.println();
 		fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\config.properties");

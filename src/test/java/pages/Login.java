@@ -1,20 +1,31 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Login {
+public class Login extends BasePage{
 
-	WebDriver driver;
 	public Login(WebDriver driver) {
-		this.driver = driver;
-		//abcd
+		super(driver);
 	}
-//Dummy
-	String enterUserNameXpath = "//input[@id='login-username']";
 	
+	String enterUserNameXpath = "//input[@id='email']";
+	String enterPasswordXpath = "//input[@id='passwd']";
+	String signInXpath = "//i[@class='icon-lock left']";
+
 	public void enterUserName(String strUserName) throws InterruptedException {
-		driver.findElement(By.xpath(enterUserNameXpath)).sendKeys(strUserName);
-		Thread.sleep(10000);
+		sendKeysWithXpath(enterUserNameXpath, strUserName);
+
+	}
+
+
+	public void enterPassword(String strPassword) throws InterruptedException {
+		sendKeysWithXpath(enterPasswordXpath, strPassword);
+	}
+	
+	
+	public void clickSignIn() throws InterruptedException {
+		clickWithXpath(signInXpath);
 	}
 }
+
+// System.getpro

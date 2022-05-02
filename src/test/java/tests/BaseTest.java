@@ -27,6 +27,7 @@ import com.fasterxml.jackson.databind.DatabindException;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.HomePage;
 import pages.Login;
+import pages.myAccountPage;
 import testDataManagement.TestDataHandler;
 import utilities.ExtentManager;
 
@@ -41,6 +42,7 @@ public class BaseTest {
 	public static FileInputStream fis;
 	public HomePage hp;
 	public Login login;
+	public myAccountPage myAccount;
 	public static ExtentReports extent;
 	
 	public void startSession() throws IOException {
@@ -81,6 +83,8 @@ public class BaseTest {
 	public void createPageObjects() {
 		hp = new HomePage(driver);
 		login = new Login(driver);
+		myAccount = new myAccountPage(driver);
+		
 	}
 
 	@BeforeMethod

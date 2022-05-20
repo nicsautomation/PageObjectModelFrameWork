@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<groups>
-  <run>
-  	<include name="sanity"></include>
-  	<!-- <exclude name="regression"></exclude>-->
-  </run>
-  </groups>
   
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.TC1_LoginIntoTheApplication"/>
-      <class name="tests.TC2_TransferFunds"/>
+      <class name="tests.TC_LogIntoApplication"/>
+ 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

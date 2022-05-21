@@ -32,7 +32,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import testDataManagement.TestDataHandler;
 import utilities.ExtentManager;
 
-public class Basetest {
+public class BaseTest {
 	WebDriver driver = null;
 //	public static final String USERNAME = "kaur938";
 //	public static final String ACCESS_KEY = "c44d5a12-0f9a-43ab-a2c4-245ecf1abd54";

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import testDataManagement.TestDataHandler;
 
-public class TC_LogIntoApplication extends Basetest {
+public class TC_LogIntoApplication extends BaseTest {
 	@Test
 	public void logIntoApplication() throws InterruptedException {
 			
